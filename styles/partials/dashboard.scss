@@ -1,0 +1,492 @@
+.dashboard {
+    @apply min-h-screen w-full relative;
+
+    // background-color: #f4f5f9;
+    .sidebar {
+        @apply w-0 lg:w-sidebar fixed left-0 top-0 h-full overflow-x-auto border-0 z-30 transition-all hidden lg:block;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #aaa;
+        }
+
+        .site-title {
+            @apply font-semibold tracking-widest;
+        }
+
+        .site-title-sm {
+            @apply font-semibold tracking-widest uppercase hidden;
+        }
+
+        li {
+            @apply transition-all pt-2 mr-2;
+
+            .nav-item {
+                @apply p-3 pl-2 block cursor-pointer text-base text-black hover:text-black transition-all relative text-[15px] hover:bg-white hover:bg-opacity-70 hover:shadow-sm hover:rounded-md;
+
+                svg {
+                    @apply transition-all absolute top-3.5 shadow-md text-[#FF8599];
+                    font-size: 22px;
+                }
+
+                span {
+                    @apply transition-none pl-9 inline-block;
+                }
+
+                &.has-arrow::after {
+                    transform: rotate(-135deg) translate(0, -50%);
+                }
+
+                &.active {
+                    @apply text-red-500 font-semibold rounded-md mr-3 shadow-sm;
+                    background: linear-gradient(45deg, #FEEEC9, #FFE1ED);
+
+                    svg {
+                        @apply transition-all absolute top-3.5 shadow-md text-red-500;
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .nav-item1 {
+                @apply p-3 pl-2 block cursor-pointer text-base text-gray-300 hover:text-black transition-all relative text-[15px] hover:bg-[#FFE1ED]  hover:bg-opacity-70 hover:shadow-sm hover:rounded-md;
+
+                svg {
+                    @apply transition-all absolute top-3.5 shadow-md text-gray-300 hover:text-slate-900;
+                    font-size: 22px;
+                }
+
+                span {
+                    @apply transition-none pl-9 inline-block;
+                }
+
+                &.has-arrow::after {
+                    transform: rotate(-135deg) translate(0, -50%);
+                }
+
+                &.active {
+                    @apply text-red-500 font-semibold rounded-md mr-3 shadow-sm;
+                    background: linear-gradient(45deg, #FEEEC9, #FFE1ED);
+
+                    svg {
+                        @apply transition-all absolute top-3.5 shadow-md text-red-500;
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .nav-item2 {
+                @apply p-3 pl-2 block cursor-pointer text-base text-gray-300 hover:text-black transition-all relative text-[15px] hover:bg-[#FFE1ED]  hover:bg-opacity-70 hover:shadow-sm hover:rounded-md;
+
+                svg {
+                    @apply transition-all absolute top-3.5 shadow-md text-gray-300 hover:text-slate-900;
+                    font-size: 22px;
+                }
+
+                span {
+                    @apply transition-none pl-9 inline-block;
+                }
+
+                &.has-arrow::after {
+                    transform: rotate(-135deg) translate(0, -50%);
+                }
+
+                &.active {
+                    @apply text-red-500 font-semibold rounded-md mr-3 shadow-sm;
+                    background: linear-gradient(45deg, #FEEEC9, #FFE1ED);
+
+                    svg {
+                        @apply transition-all absolute top-3.5 shadow-md text-red-500;
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .sub-menu {
+                .label {
+                    display: none;
+                }
+
+                .nav-item {
+                    @apply py-3 hover:bg-none pl-3;
+                }
+
+                .nav-item1 {
+                    @apply py-3 hover:bg-none pl-3;
+                }
+
+                .nav-item2 {
+                    @apply py-3 hover:bg-none pl-3;
+                }
+
+                li:last-child {
+                    @apply pb-1;
+                }
+            }
+
+            &.active {
+
+                // @apply bg-light hover:bg-light;
+                ul {}
+            }
+
+            &.mm-active {
+                &>a {
+                    &.has-arrow::after {
+                        transform: rotate(-45deg) translate(0, -50%);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .header {
+        @apply absolute top-0 right-0 left-0 lg:left-sidebar z-20 h-16 transition-all;
+    }
+
+    .main-content {
+        @apply lg:pl-sidebar z-10 relative transition-all;
+        padding-top: 70px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        &.mini {
+            .sidebar {
+                @apply w-24 fixed h-full overflow-y-auto;
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+        
+                &::-webkit-scrollbar-thumb {
+                    background: #aaa;
+                }
+
+                .site-title {
+                    @apply hidden;
+                }
+
+                .site-title-sm {
+                    @apply block;
+                }
+
+
+                .ps {
+                    overflow: inherit !important;
+                }
+
+                .c_logo {
+                    @apply px-2
+                }
+
+                .c_logout {
+                    @apply pl-8 ;
+
+                    .logout_icon {
+                        @apply text-[23px]
+                    }
+                }
+
+                .logout_text {
+                    @apply hidden;
+                }
+
+
+                li {
+                    @apply rounded;
+
+                    .nav-item {
+                        @apply px-0 py-2;
+
+                        svg {
+                            font-size: 28px;
+                            margin: 0 !important;
+                            @apply relative top-0;
+                        }
+
+                        span {
+                            @apply transition-none hidden;
+                            // visibility: hidden;
+                        }
+
+                        .c-tooltip {
+                            @apply transition-none hidden;
+                            // visibility: hidden;
+                            width: 120px;
+                            color: #fff;
+                            text-align: center;
+                            padding: 5px 0;
+                            border-radius: 6px;
+                            position: absolute;
+                            z-index: 20;
+                            @apply left-20 bg-gray-700;
+                        }
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    .nav-item1 {
+                        @apply px-0 py-2;
+
+                        svg {
+                            font-size: 28px;
+                            margin: 0 !important;
+                            @apply relative top-0;
+                        }
+
+                        span {
+                            @apply transition-none hidden;
+                            // visibility: hidden;
+                        }
+
+                        .c-tooltip {
+                            @apply transition-none hidden;
+                            // visibility: hidden;
+                            width: 120px;
+                            color: #fff;
+                            text-align: center;
+                            padding: 5px 0;
+                            border-radius: 6px;
+                            position: absolute;
+                            z-index: 20;
+                            @apply left-20 bg-gray-700;
+                        }
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    .nav-item2 {
+                        @apply px-0 py-2;
+
+                        svg {
+                            font-size: 28px;
+                            margin: 0 !important;
+                            @apply relative top-0;
+                        }
+
+                        span {
+                            @apply transition-none hidden;
+                            // visibility: hidden;
+                        }
+
+                        .c-tooltip {
+                            @apply transition-none hidden;
+                            // visibility: hidden;
+                            width: 120px;
+                            color: #fff;
+                            text-align: center;
+                            padding: 5px 0;
+                            border-radius: 6px;
+                            position: absolute;
+                            z-index: 20;
+                            @apply left-20 bg-gray-700;
+                        }
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    
+                    .mm-show {
+                        display: none;
+                    }
+
+                    &:hover {
+                        .nav-item {
+                            .c-tooltip {
+                                @apply block;
+                                // visibility: visible;
+                            }
+                        }
+
+                        .nav-item1 {
+                            .c-tooltip {
+                                @apply block;
+                                // visibility: visible;
+                            }
+                        }
+
+                        .nav-item2 {
+                            .c-tooltip {
+                                @apply block;
+                                // visibility: visible;
+                            }
+                        }
+
+                        .sub-menu {
+                            display: none !important;
+                            height: auto !important;
+                        }
+
+                        .sub-menu.mm-show {
+                            display: none !important;
+                            height: auto !important;
+                        }
+                    }
+
+
+                    .sub-menu {
+                        @apply absolute bg-gray-700 w-64 -mt-12 z-30 p-0 m-0 rounded-sm overflow-hidden shadow-2xl;
+                        margin-left: 65px !important;
+
+                        .label {
+                            @apply  pt-2 pl-4 pb-2 text-sm;
+                        }
+
+                        li {
+                            @apply bg-none;
+                            margin: 0;
+
+                            svg {
+                                @apply text-gray-200;
+                                margin: 0 1rem !important;
+                            }
+
+                            span {
+                                visibility: visible;
+                                @apply pl-0;
+                            }
+                        }
+
+                        li:hover {
+                            @apply bg-red-500
+                        }
+
+                        li:last-child {
+                            @apply pb-0;
+                        }
+
+                        .nav-item {
+                            @apply m-0 pb-3 pt-2.5 pl-4 hover:bg-opacity-0;
+
+                            &.active {
+                                svg {
+                                    @apply text-white;
+                                }
+
+                                @apply text-white;
+                            }
+                        }
+
+                        .nav-item1 {
+                            @apply m-0 pb-3 pt-2.5 pl-4 hover:bg-opacity-0;
+
+                            &.active {
+                                svg {
+                                    @apply text-white;
+                                }
+
+                                @apply text-white;
+                            }
+                        }
+
+                        .nav-item2 {
+                            @apply m-0 pb-3 pt-2.5 pl-4 hover:bg-opacity-0;
+
+                            &.active {
+                                svg {
+                                    @apply text-white;
+                                }
+
+                                @apply text-white;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        // @apply bg-white;
+
+                        &>.nav-item {
+                            @apply mr-5 pl-[3px];
+                        }
+
+                        &>.nav-item1 {
+                            @apply mr-5 pl-[3px];
+                        }
+
+                        &>.nav-item2 {
+                            @apply mr-5 pl-[3px];
+                        }
+
+                        // svg {
+                        //     @apply text-white;
+                        // }
+                    }
+                }
+            }
+
+            .header {
+                @apply left-sidebar-mini absolute;
+            }
+
+            .main-content {
+                @apply pl-sidebar-mini;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        &.mobile {
+            .sidebar-bg {
+                @apply z-20 absolute h-full w-full bg-gray-700 bg-opacity-30;
+            }
+
+            .sidebar {
+                @apply block z-30 w-sidebar transition-all;
+            }
+        }
+    }
+}
+
+@media print {
+    .dashboard {
+        .sidebar {
+            display: none;
+        }
+
+        .header {
+            display: none;
+        }
+    }
+
+    .main-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .print-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        min-height: 100vh;
+        background-color: white;
+    }
+
+    .print-d-hidden {
+        display: none;
+    }
+}
+
+.language-selector {
+    &>a {
+        color: #f3f4f8;
+
+        &:focus {
+            color: white;
+        }
+
+        &:focus {
+            color: white;
+        }
+    }
+}

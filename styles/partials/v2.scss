@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+.container2 {
+  max-width: 1320px;
+  margin: auto;
+  @media screen and (max-width: 1320px) {
+    padding: 0 20px;
+  }
+}
+
+
+.header_1{
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.header_2{
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 63px;
+}
+
+.header_3{
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.header_4{
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.header_5{
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.header_6{
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.paragraph{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.paragraph_1{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+//react slick dot customization
+// .slick-dots li button:before {
+//   margin-top: 8px;
+//   color: #000000 !important;
+//   font-size: 12px !important;
+ 
+// }
+// .slick-prev:before, .slick-next:before {
+//   color: #000000 !important;
+//   font-size: 20px !important;
+// }
+
+.slick-dots li.slick-active button:before {
+  color: #D58F76 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+}
+.slick-dots li button:before {
+  color: #D58F76 !important;
+}

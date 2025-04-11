@@ -1,0 +1,18 @@
+.payment_container {
+    background-image: url('../../public/images/payBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 10px;
+    opacity: 10%;
+    z-index: -1;
+}
+
+.payment_container__main {
+    z-index: 1;
+}
+
+.custom_front {
+    font-family: 'Poppins', sans-serif;
+}
