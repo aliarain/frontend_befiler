@@ -8,7 +8,7 @@ module.exports = {
     trailingSlash: true,
     env: {
         BACKEND_URL: process.env.NODE_ENV === 'development' ?
-            'http://localhost:5000/' : 
+            'https://befilerbackend-9135r.kinsta.app/' : 
             'http://localhost:5000/'
     },
     images: {
