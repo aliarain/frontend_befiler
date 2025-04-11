@@ -1,5 +1,5 @@
 import MetisMenu from '@metismenu/react';
-import 'metismenujs/dist/metismenujs.css';
+import '@metismenu/react/dist/@metismenu/react.css';
 import Link from 'next/link'
 import { Fragment, useEffect, useState } from "react";
 import { FaSignOutAlt } from "react-icons/fa";

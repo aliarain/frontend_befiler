@@ -11,7 +11,7 @@
     "buildexport": "next build && next export"
   },
   "dependencies": {
-    "@metismenu/react": "^0.0.2",
+    "@metismenu/react": "^0.0.3",
     "@paypal/react-paypal-js": "^7.8.1",
     "@react-pdf/renderer": "^2.3.0",
     "@tawk.to/tawk-messenger-react": "^2.0.1",
@@ -30,7 +30,7 @@
     "jsonexport": "^3.2.0",
     "jwt-decode": "^3.1.2",
     "moment": "^2.29.4",
-    "next": "12.2.2",
+    "next": "12.2.0",
     "next-pwa": "^5.6.0",
     "next-sitemap": "^4.0.6",
     "nprogress": "^0.2.0",

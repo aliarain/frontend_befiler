@@ -1,5 +1,5 @@
 import MetisMenu from '@metismenu/react';
-import 'metismenujs/dist/metismenujs.css';
+import '../../../styles/metismenu.css';
 import Link from 'next/link'
 import {Fragment, useEffect, useState} from "react";
 import swalAlert from '../../common/swalAlert';

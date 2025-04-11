@@ -8,8 +8,8 @@ module.exports = {
     trailingSlash: true,
     env: {
         BACKEND_URL: process.env.NODE_ENV === 'development' ?
-            'http://192.168.0.185:5000/' :
-            'https://backend.taxstick.appstick.com.bd/',
+            'http://localhost:5000/' : 
+            'http://localhost:5000/'
     },
     images: {
         domains: ['appstick.s3.ap-southeast-1.amazonaws.com','appstick-resources.s3.ap-southeast-1.amazonaws.com'], 

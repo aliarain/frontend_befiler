@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@metismenu/react':
-        specifier: ^0.0.2
-        version: 0.0.2(react@18.2.0)
+        specifier: ^0.0.3
+        version: 0.0.3
       '@paypal/react-paypal-js':
         specifier: ^7.8.1
         version: 7.8.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -981,10 +981,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@metismenu/react@0.0.2':
-    resolution: {integrity: sha512-8SeeeXbmaAADQwlB/3yL5a9/aRBm2R2QtrzUHqk/6rl9VJ/x7bYVkoLnbIuz9oEF8dlQR/CqXna9xG3vR85czw==}
-    peerDependencies:
-      react: ^16.13.1
+  '@metismenu/react@0.0.3':
+    resolution: {integrity: sha512-oXJHaN+MyN7tB2a8dKgXypPUGwP5zlrJJ3L++HYOMrJ9+5JoTHcjQfe66n64scL+ampMPEgAgU9ZxkySucgF/Q==}
 
   '@next/env@12.2.2':
     resolution: {integrity: sha512-BqDwE4gDl1F608TpnNxZqrCn6g48MBjvmWFEmeX5wEXDXh3IkAOw6ASKUgjT8H4OUePYFqghDFUss5ZhnbOUjw==}
@@ -5887,10 +5885,9 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@metismenu/react@0.0.2(react@18.2.0)':
+  '@metismenu/react@0.0.3':
     dependencies:
       metismenujs: 1.4.0
-      react: 18.2.0
 
   '@next/env@12.2.2': {}
 
@@ -7393,7 +7390,7 @@ snapshots:
       eslint: 8.19.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 2.7.1(eslint-plugin-import@2.31.0(eslint@8.19.0))(eslint@8.19.0)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.19.0)(typescript@5.8.3))(eslint-import-resolver-typescript@2.7.1)(eslint@8.19.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.19.0)(typescript@5.8.3))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.31.0(eslint@8.19.0))(eslint@8.19.0))(eslint@8.19.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.19.0)
       eslint-plugin-react: 7.37.5(eslint@8.19.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.19.0)
@@ -7415,7 +7412,7 @@ snapshots:
     dependencies:
       debug: 4.4.0(supports-color@5.5.0)
       eslint: 8.19.0
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.19.0)(typescript@5.8.3))(eslint-import-resolver-typescript@2.7.1)(eslint@8.19.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.19.0)(typescript@5.8.3))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.31.0(eslint@8.19.0))(eslint@8.19.0))(eslint@8.19.0)
       glob: 7.2.3
       is-glob: 4.0.3
       resolve: 1.22.10
@@ -7434,7 +7431,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.19.0)(typescript@5.8.3))(eslint-import-resolver-typescript@2.7.1)(eslint@8.19.0):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.19.0)(typescript@5.8.3))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.31.0(eslint@8.19.0))(eslint@8.19.0))(eslint@8.19.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
