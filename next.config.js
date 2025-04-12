@@ -7,7 +7,7 @@ module.exports = {
     reactStrictMode: false,
     trailingSlash: true,
     env: {
-        BACKEND_URL: 'http://209.38.57.61:5000/'
+        BACKEND_URL: 'https://209.38.57.61:5000/'
         
         // process.env.NODE_ENV === 'development' ?
         //     'https://befilerbackend-9135r.kinsta.app/' : 
