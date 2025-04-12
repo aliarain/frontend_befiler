@@ -14,11 +14,7 @@ module.exports = {
         //     'http://localhost:5000/'
     },
     images: {
-        domains: [
-            'storage.vercel.com',
-            'appstick.s3.ap-southeast-1.amazonaws.com',
-            'appstick-resources.s3.ap-southeast-1.amazonaws.com'
-        ], 
+        domains: ['appstick.s3.ap-southeast-1.amazonaws.com','appstick-resources.s3.ap-southeast-1.amazonaws.com'], 
     },
     swcMinify: false
 };
