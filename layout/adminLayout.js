@@ -377,18 +377,7 @@ const menu = [
             },
         ]
     },
-    {
-        label: 'Need Help ?',
-        icon: FiHelpCircle,
-        permissions: ['admin', 'documentation'],
-        child: [
-            {
-                label: 'Documentation',
-                icon: CgFileDocument,
-                href: 'https://documentation.taxstick.appstick.com.bd/',
-            },
-        ]
-    },
+    
 ]
 
 const getMenu = user => {
